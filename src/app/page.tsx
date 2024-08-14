@@ -10,16 +10,15 @@ const ProfileCard = () => (
               className="rounded-full"
               src="/anas photo.png" // Correct image filename
               alt="Anasbilal"
-              layout="fill"
-              objectFit="cover"
-              priority
+              fill // replaces layout="fill"
+              style={{ objectFit: "cover" }} // replaces objectFit="cover"
             />
           </div>
         </div>
         <div className="flex-1 flex flex-col justify-top pl-6 mt-5">
           <div className="text-center md:text-left">
             <p className="text-lg font-medium mb-4">
-              Hi, I&apos;m a chemist, currently transitioning to web development. With a background in analytical chemistry, I&apos;m bringing a methodical approach to learning web technologies. I&apos;m excited to merge my analytical skills with creative problem-solving as I explore the dynamic field of web development.
+              Hi, I'm a chemist, currently transitioning to web development. With a background in analytical chemistry, I'm bringing a methodical approach to learning web technologies. I'm excited to merge my analytical skills with creative problem-solving as I explore the dynamic field of web development.
             </p>
             <figcaption className="font-medium mt-4">
               <div className="text-sky-500 dark:text-sky-400">
@@ -33,10 +32,7 @@ const ProfileCard = () => (
         </div>
       </figure>
     </div>
-    <div className=""></div> {/* Colored row */}
   </div>
 );
 
 export default ProfileCard;
-
-
