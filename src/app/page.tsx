@@ -6,6 +6,7 @@ const ProfileCard = () => (
       <figure className="flex bg-blue-100 rounded-xl p-8 dark:bg-zinc-700">
         <div className="flex-shrink-0">
           <div className="relative w-24 h-24 md:w-48 md:h-48">
+    
             <Image
               className="rounded-full"
               src="/anas photo.png" // Correct image filename
